@@ -6,9 +6,9 @@ parser = argparse.ArgumentParser(
                     description="search people's name in google",
                     epilog='')
 
-parser.add_argument('--firstname', metavar='', type=str, help="Person's first name")
-parser.add_argument('--lastname', metavar='', type=str, help="Person's first last")
-parser.add_argument('--words', metavar='', type=argparse.FileType('r'), help="Add extra words for search")
+parser.add_argument('-f', '--firstname', metavar='', type=str, help="Person's first name")
+parser.add_argument('-l', '--lastname', metavar='', type=str, help="Person's first last")
+parser.add_argument('-w', '--words', metavar='', type=argparse.FileType('r'), help="Add extra words for search")
 
 
 
